@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QuickServe - Local Services</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.jpp"
+>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            Quick<span>Serve</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="customer-dashboard.html">
+                My Bookings
+            </a>
+
+            <a href="provider-dashboard.html">
+                Provider Dashboard
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="signup.html" class="nav-btn">
+                Sign Up
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-container">
+
+
+            <!-- HERO TEXT -->
+
+            <div class="hero-text">
+
+                <p class="tag">
+                    LOCAL SERVICES • QUICK BOOKING
+                </p>
+
+
+                <h1>
+                    Find help.
+                    <br>
+                    <span>Get it done.</span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Discover local professionals, book a service,
+                    and track your request from start to finish.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#services"
+                        class="btn"
+                    >
+                        Explore Services
+                    </a>
+
+
+                    <a
+                        href="signup.html"
+                        class="outline-btn"
+                    >
+                        Join QuickServe
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= HERO SLIDER ================= -->
+
+            <div class="hero-slider">
+
+
+                <!-- SLIDE 1 -->
+
+                <div class="slide active">
+
+                    <img
+                        src="images/tech.webp"
+                        alt="Tech Support"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            QUICKSERVE
+                        </span>
+
+                        <h2>
+                            Tech Support
+                        </h2>
+
+                        <p>
+                            Quick help for your computers
+                            and devices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SLIDE 2 -->
+
+                <div class="slide">
+
+                    <img
+                        src="images/tutor.webp"
+                        alt="Home Tutor"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            QUICKSERVE
+                        </span>
+
+                        <h2>
+                            Home Tutor
+                        </h2>
+
+                        <p>
+                            Find experienced tutors
+                            for your learning needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SLIDE 3 -->
+
+                <div class="slide">
+
+                    <img
+                        src="images/lens.webp"
+                        alt="Photography"
+                    >
+
+                    <div class="slide-info">
+
+                        <span>
+                            QUICKSERVE
+                        </span>
+
+                        <h2>
+                            Photography
+                        </h2>
+
+                        <p>
+                            Book a photographer
+                            for your special moments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PREVIOUS BUTTON -->
+
+                <button
+                    class="slider-btn prev"
+                    id="prevSlide"
+                    type="button"
+                >
+                    &#10094;
+                </button>
+
+
+
+                <!-- NEXT BUTTON -->
+
+                <button
+                    class="slider-btn next"
+                    id="nextSlide"
+                    type="button"
+                >
+                    &#10095;
+                </button>
+
+
+
+                <!-- SLIDER DOTS -->
+
+                <div class="dots">
+
+                    <button
+                        class="dot active"
+                        type="button"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        type="button"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        type="button"
+                    ></button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SERVICES SECTION ================= -->
+
+    <main
+        class="container"
+        id="services"
+    >
+
+
+        <!-- SECTION TITLE -->
+
+        <div class="section-title">
+
+            <p class="tag">
+                EXPLORE
+            </p>
+
+            <h2>
+                Popular Services
+            </h2>
+
+            <p class="muted">
+                Choose a service and book a trusted
+                local provider.
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <div class="filters">
+
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search service or provider..."
+            >
+
+
+            <select id="category">
+
+                <option value="">
+                    All Categories
+                </option>
+
+                <option value="Tech Support">
+                    Tech Support
+                </option>
+
+                <option value="Home Tutor">
+                    Home Tutor
+                </option>
+
+                <option value="Photographer">
+                    Photographer
+                </option>
+
+                <option value="Home Cleaning">
+                    Home Cleaning
+                </option>
+
+                <option value="Car Wash">
+                    Car Wash
+                </option>
+
+                <option value="Painter">
+                    Painter
+                </option>
+
+            </select>
+
+
+        </div>
+
+
+
+        <!-- ================= PROVIDER CARDS ================= -->
+
+        <div
+            id="providers"
+            class="grid"
+        ></div>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <p>
+                <strong>QuickServe</strong>
+            </p>
+
+            <p>
+                Simple local service booking
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Find • Book • Complete • Review
+            </p>
+
+            <p>
+                © 2026 QuickServe
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= SWEET ALERT ================= -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11"
+    ></script>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

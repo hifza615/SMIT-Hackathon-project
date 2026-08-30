@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - QuickServe</title>
+    <link rel="stylesheet" href="style.css">
+
+        <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.jpg"
+>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Quick<span>Serve</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="customer-dashboard.html">My Bookings</a>
+        <button id="logout" class="link-btn">Logout</button>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="dashboard-head">
+
+        <div>
+            <p class="tag">CUSTOMER DASHBOARD</p>
+            <h1 id="welcome">My Bookings</h1>
+        </div>
+
+        <a href="index.html" class="btn">
+            Book a Service
+        </a>
+
+    </div>
+
+    <div id="customerStats" class="stats"></div>
+
+    <div id="customerBookings"></div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>

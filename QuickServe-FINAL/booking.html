@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service - QuickServe</title>
+    <link rel="stylesheet" href="style.css">
+        <link
+    rel="icon"
+    type="image/png"
+    href="images/favicon.jpg"
+>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Quick<span>Serve</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="customer-dashboard.html">My Bookings</a>
+        <button id="logout" class="link-btn">Logout</button>
+    </nav>
+</header>
+
+<main class="container narrow">
+
+    <div class="box">
+
+        <p class="tag">NEW BOOKING</p>
+
+        <h1 id="bookingTitle">
+            Book a Service
+        </h1>
+
+        <p id="providerInfo" class="muted"></p>
+
+        <form id="bookingForm" class="form-grid">
+
+            <label>
+                Service
+
+                <select id="service" required>
+                    <option>Tech Support</option>
+                    <option>Home Tutor</option>
+                    <option>Photographer</option>
+                    <option>Home Cleaning</option>
+                    <option>Car Wash</option>
+                    <option>Painter</option>
+                </select>
+            </label>
+
+            <label>
+                Date
+                <input type="date" id="date" required>
+            </label>
+
+            <label>
+                Time
+                <input type="time" id="time" required>
+            </label>
+
+            <label>
+                Location
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Area / address"
+                    required
+                >
+            </label>
+
+            <label class="full">
+                Description
+
+                <textarea
+                    id="description"
+                    placeholder="Tell the provider what you need..."
+                    required
+                ></textarea>
+            </label>
+
+            <button class="btn full" type="submit">
+                Submit Booking
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
